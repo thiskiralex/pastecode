@@ -5,8 +5,7 @@
 
 if( isset( $argv[1] ) ) {
 
-	$key = $argv[1];
-	$key = file_get_contents( $key );
+	$key = file_get_contents( $argv[1] );
 
 	if( strlen( $key ) == 20 ) {
 		$k = $key[0 + 4]
